@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.back-mobile{
+    background-image: url('./images/bg-shorten-mobile.svg');
+}
+
+.back-desktop{
+    background-image: url('./images/bg-boost-desktop.svg');
+}
+
+
+.cardsbox::before {
+    content: '';
+    position: absolute;
+    background-color: aqua;
+    z-index: 0;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 8px;
+  }
+
+  @media screen and (max-width: 900px){
+    .cardsbox::before {
+        top: 20%;
+        left: 45%;
+        width: 5%;
+        height: 600px;
+        
+      }
+  }
+  
+
+
